@@ -7,6 +7,17 @@ body{
     font-family: "Epunda Slab", serif;
 }
 
+
+hr {
+  border: none;              
+  height: 2px;              
+  background: rgb(83, 83, 106);         
+  margin: 60px 70px;          
+}
+
+
+/*Nav Bar Section********************************************************/
+
 nav{
   display:flex;
   justify-content:space-between;
@@ -33,23 +44,138 @@ nav ul li{
     margin: 0px 23px;
 }
 
-
-.no_underline{
+nav div ul li a{
+    text-decoration: none;
     color:black;
     font-size: medium;
     font-weight: 400;
 }
 
-.firstSection{
-    display:flex;
-    justify-content: space-around;
-    padding:80px 20px;
+nav div ul li a:hover{
+    font-size: 1.02rem;
+    color:#7979bc;
 }
 
-.firstSection div{
-    width:30%;
+/*About Section********************************************************/
+
+
+.aboutSection{
+    display:flex;
+    justify-content: space-around;
+}
+
+.aboutSection div{
+    width:35%;
 }
 
 .leftSection{
-   background-color:#d6d6dc ;
+    padding:80px 20px 0px 3px;
+    margin : 10px;
 }
+
+#about{
+  font-size:30px;
+}
+
+.name{
+    color:rgb(83, 83, 106);
+    -webkit-text-stroke: 0px black;
+}
+.rightSection{
+    padding : 30px 40px 0px 0px;
+    margin:30px;
+}
+.rightSection img {
+  max-width: 130%; 
+  height: auto;
+   
+}
+
+/*Experience Section********************************************************/
+
+.experienceSection{
+    display:flex;
+    justify-content: left;
+    margin: 10px;
+    padding: 80px 20px 0px 40px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: #00adb5;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* Each container */
+.container {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 3px solid #00adb5;
+  border-radius: 50%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%); /* ensures circles stay on center line */
+  z-index: 1;
+}
+
+/* Left & Right containers */
+.left {
+  left: 0;
+  text-align: right;
+}
+
+.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Content box */
+.content {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.left .content {
+  margin-right: 30px; /* push away from line */
+}
+
+.right .content {
+  margin-left: 30px; /* push away from line */
+}
+
+/* Headings inside timeline */
+.content h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+
