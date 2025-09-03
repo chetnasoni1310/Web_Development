@@ -1,38 +1,59 @@
-body , ul{
+*{
     margin : 0;
     padding :0;
 }
 
-.header{
-    display :flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:10px 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+body{
+    font-family: "Epunda Slab", serif;
 }
 
-.logo_title{
-    display:flex;
-    align-items: center;
-    gap:10px;
-}
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding:20px 4px 20px 20px;
+  background-color:#d6d6dc;
 
-.logo_title img{
-    width:"3%";
-    height:"3%";
-    object-fit: contain;
 }
 
 
-.nav ul li a{
-    text-decoration: none;
-    color : #333;
+.left{
+    font-size: 1.5rem;
     font-weight: 500;
-    transition: color 0.2s ease;
-} 
-
-.nav ul li a:hover{
-    color:rgb(78, 113, 129);
 }
 
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding:4px;
+    margin: 0px 23px;
+}
+
+
+.no_underline{
+    color:black;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    padding:80px 20px;
+}
+
+.firstSection div{
+    width:30%;
+}
+
+.leftSection{
+   background-color:#d6d6dc ;
+}
+
+.rightSection{
+   background-color:#d6d6dc ;
+}
