@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy';
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Center Section**************************************/
+
+.center{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+}
+.left h1{
+    margin:70px auto;
+    padding-left:40px;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.right img{
+    background-size:cover ;
+    background-position:0 60%;
+}
