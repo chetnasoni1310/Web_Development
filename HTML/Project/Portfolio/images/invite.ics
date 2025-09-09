@@ -1,0 +1,59 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:GMT+5:30
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Kolkata:20250909T170000
+DTEND;TZID=Asia/Kolkata:20250909T180000
+DTSTAMP:20250909T071227Z
+ORGANIZER;CN=DianApps HR:mailto:hr@dianapps.com
+UID:28po2t2gss3qa9vf1uf6bdii8j@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=DianApps HR;X-NUM-GUESTS=0:mailto:hr@dianapps.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=all@dianapps.com;X-NUM-GUESTS=0:mailto:all@dianapps.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/kif-xqic-edk
+X-MICROSOFT-CDO-OWNERAPPTID:-1826469094
+CREATED:20250909T071222Z
+DESCRIPTION:DianApps Technology is inviting you to a scheduled Zoom meeting
+ .<br><br>Topic: Session 1 : Devs and Brain | Meet Your New Teammate<br>Time
+ : Sep 9\, 2025 05:00 PM India<br>Join Zoom Meeting<br><a href="https://us02
+ web.zoom.us/j/84375256221?pwd=CJjT8hH3bSybhudwQAlpddlUpKOdYC.1">https://us0
+ 2web.zoom.us/j/84375256221?pwd=CJjT8hH3bSybhudwQAlpddlUpKOdYC.1</a><br><br>
+ Meeting ID: 843 7525 6221<br>Passcode: 150545<br><br>---<br><br>One tap mob
+ ile<br>+12532158782\,\,84375256221#\,\,\,\,*150545# US (Tacoma)<br>+1301715
+ 8592\,\,84375256221#\,\,\,\,*150545# US (Washington DC)<br><br>Join instruc
+ tions<br><a href="https://us02web.zoom.us/meetings/84375256221/invitations?
+ signature=GnbPalmF4-GQus14jOCP1ijfxSxf0t6so3bq11tCTnA">https://us02web.zoom
+ .us/meetings/84375256221/invitations?signature=GnbPalmF4-GQus14jOCP1ijfxSxf
+ 0t6so3bq11tCTnA</a>\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.go
+ ogle.com/kif-xqic-edk\nOr dial: (US) +1 414-909-7299 PIN: 335362236#\nMore 
+ phone numbers: https://tel.meet/kif-xqic-edk?pin=3965116089610&hs=7\n\nLear
+ n more about Meet at: https://support.google.com/a/users/answer/9282720\n\n
+ Please do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20250909T071222Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Devs and Brain | Meet Your New Teammate
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H10M0S
+END:VALARM
+END:VEVENT
+END:VCALENDAR
