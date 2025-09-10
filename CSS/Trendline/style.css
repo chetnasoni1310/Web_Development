@@ -46,6 +46,14 @@ main{
     color:rgb(165, 155, 155);
 }
 
+#part2 a{
+  text-decoration: none;
+  color:black;
+}
+
+#nav1 #part2 a:hover h4{
+    font-size: 15.3px;
+}
 
 #nav2{
     /* background-color: aqua; */
@@ -58,10 +66,20 @@ main{
     gap:60px;
 }
 
-#nav2 h4{
+
+#nav2 a{
+    text-decoration: none;
+    color:black;
+}
+
+#nav2 a h4{
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
+}
+
+#nav2 a :hover{
+    font-size: 18.3px;
 }
 
 /*Center ****************************************************/
@@ -100,27 +118,34 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    
 }
 
 .elem h3{
     font-size: 90px;
     /* object-fit: cover; */
     font-weight: 300;
+    word-break: break-all;
 }
 
 
 #lower {
    width:100%;
-   height:60%;
+   height :200px;
 }
 
-
-
  #lower img{
-    width:100%;
-    height:370px;
-    
+    padding:5px;
+        width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
  }
 
 
-
+.truncate {
+  width: 500px;            /* must have fixed width */
+  white-space: nowrap;     /* prevent wrapping */
+  overflow: hidden;        /* hide overflowing text */
+  text-overflow: ellipsis; /* show ... */
+}
