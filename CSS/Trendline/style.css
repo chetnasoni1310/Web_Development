@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Epunda Slab", serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+/*Nav Bars ****************************************************/
+#nav1{
+    /* background-color: aqua; */
+    width:100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30px;
+
+}
+
+#nav1 i{
+    font-size: 30px;
+} 
+
+#nav1 #part2{
+    display: flex;
+    gap:35px;
+    padding-right: 20px;
+}
+
+#nav1 #part2 h4{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#nav1 #part2 h4 span{
+    color:rgb(165, 155, 155);
+}
+
+
+#nav2{
+    /* background-color: aqua; */
+    width:100%;
+    height:50px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding:0 30px;
+    gap:60px;
+}
+
+#nav2 h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*Center ****************************************************/
+#center{
+    width:100%;
+    height: calc(100% - 100px);
+    /* background-color: aquamarine; */
+}
+
+#upper{
+    width: 100%;
+    height:40%;
+    /* background-color:burlywood; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#upper::-webkit-scrollbar{
+    background-color: transparent;
+    height:5px;
+}
+
+#upper::-webkit-scrollbar-thumb{
+    background-color: rgb(63, 53, 63);
+}
+
+
+
+.elem{
+    flex-shrink: 0;
+    width:40%;
+    height:100%;
+    /* background-color: rgb(147, 116, 77); */
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem h3{
+    font-size: 90px;
+    /* object-fit: cover; */
+    font-weight: 300;
+}
+
+
+#lower {
+   width:100%;
+   height:60%;
+}
+
+
+
+ #lower img{
+    width:100%;
+    height:370px;
+    
+ }
+
+
+
