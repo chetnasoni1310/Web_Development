@@ -98,6 +98,14 @@ main{
     overflow-x: auto;
 }
 
+
+.truncate {
+  width: 500px;            /* must have fixed width */
+  white-space: nowrap;     /* prevent wrapping */
+  overflow: hidden;        /* hide overflowing text */
+  text-overflow: ellipsis; /* show ... */
+}
+
 #upper::-webkit-scrollbar{
     background-color: transparent;
     height:5px;
@@ -143,9 +151,4 @@ main{
  }
 
 
-.truncate {
-  width: 500px;            /* must have fixed width */
-  white-space: nowrap;     /* prevent wrapping */
-  overflow: hidden;        /* hide overflowing text */
-  text-overflow: ellipsis; /* show ... */
-}
+
