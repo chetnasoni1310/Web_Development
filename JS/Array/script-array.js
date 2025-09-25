@@ -12,3 +12,10 @@ console.log(val);
 console.log(typeof(arr[6]));
 
 
+var text = `this 
+is 
+it`;
+
+console.log(text);
+console.log(text.blink());
+
