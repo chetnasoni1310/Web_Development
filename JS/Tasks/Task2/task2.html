@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQPo4vvuz0UOIR_oeEPLXU0-T4-YxtdsBgQov04We8fc3gpBp8pF2rswam1GY7SlhgK0&usqp=CAU" alt="robo" ></div>
+
+    <button>Click to swap</button>
+
+    <div class="img2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr7ULbd71Zi53OirJwNfm0a8I6W5PcoZj4bTd6DIKNYHvNoYe-AxWBKge1KnFAQVNS9jA&usqp=CAU" alt="birdiee"></div>
+
+</body>
+
+<script>
+
+    var img1 = document.querySelector('.img1 img');
+    var img2 = document.querySelector('.img2 img');
+    var btn = document.querySelector('button');
+
+    btn.addEventListener('click',swap);
+
+    function swap(){
+       
+        var temp=img1.src;
+        img1.src=img2.src;
+        img2.src=temp;
+    }
+ 
+</script>
+</html>
