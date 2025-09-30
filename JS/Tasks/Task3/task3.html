@@ -1,0 +1,38 @@
+<!-- //Create a form with input fields and submit button , use js to validate it and display an error if invalid input is found  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+   <form action="/submit" method="post" target="_blank" id="form">
+  <fieldset>
+    <legend>Personal Details</legend>
+
+    <div>
+      <label for="name" class="required-field">Name: </label>
+      <input type="text" id="name" name="name">
+    </div>
+
+    <div>
+      <label for="age">Age <span>*</span> : </label>
+      <input type="number" id="age" name="age" required>
+    </div>
+
+    <div>
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <button type="submit">Submit</button>
+  </fieldset>
+</form>
+
+
+</body>
+<script src="task3.js"></script>
+</html>
