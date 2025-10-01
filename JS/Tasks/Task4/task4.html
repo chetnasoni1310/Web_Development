@@ -1,0 +1,194 @@
+<!-- Create an unordered list ,allow users to add and remove list items dynamically using buttons -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        .btns{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height:30px;
+            gap:7px;
+        }
+    </style>
+</head>
+<body>
+     <div class="list">
+        
+        <ul id="itemList">
+            <li>apple</li>
+            <li>banana</li>
+            <li>mango</li>
+            <li>chickoo</li>
+        </ul>
+            <div class="btns">
+                <button id="add-item">Add items at end</button>
+                <button id="addStart-item">Add items at start</button>
+                <button id="remove-item">Remove items at end</button>
+                <button id="removeStart-item">Remove items at start</button>
+                <button id="replace-item">Replace items</button>
+                <button id="insert-item">Insert items</button>
+            </div>
+ 
+     </div>
+</body>
+
+<script>
+
+ const itemList  = document.querySelector("#itemList");
+
+
+ var addItems    = document.querySelector("#add-item");
+ var addStartItems    = document.querySelector("#addStart-item");
+ var removeItems = document.querySelector("#remove-item");
+ var removeStartItems = document.querySelector("#removeStart-item");
+ var replaceItems = document.querySelector("#replace-item");
+ var insertItems = document.querySelector("#insert-item");
+ 
+
+
+
+ addItems.addEventListener('click',addItem);
+ addStartItems.addEventListener('click',addStartItem);
+ removeItems.addEventListener('click',removeItem);
+ removeStartItems.addEventListener('click',removeStartItem);
+ replaceItems.addEventListener('click',replaceItem);
+ insertItems.addEventListener('click',insertItem);
+
+
+ function addItem(){
+       const newItem = prompt("Enter the list item: ");
+       if(newItem.trim()!=="")
+       {
+          var item = document.createElement('li');
+          item.textContent = newItem.trim();
+          itemList.appendChild(item);
+       }
+       else{
+          alert("Enter valid item")
+       }
+ }
+
+
+ function addStartItem(){
+       const newItem = prompt("Enter the list item: ");
+       if(newItem.trim()!=="")
+       {
+          var item = document.createElement('li');
+          item.textContent = newItem.trim();
+          itemList.prepend(item);
+       }
+       else{
+          alert("Enter valid item")
+       }
+ }
+
+ function removeItem(){
+    if(itemList.lastElementChild)
+    {
+        itemList.removeChild(itemList.lastElementChild);
+    }
+    else{
+        alert("List is empty !! Failed attempt")
+    }
+ }
+
+ function removeStartItem(){
+    if(itemList.firstElementChild)
+    {
+        itemList.removeChild(itemList.firstElementChild);
+    }
+    else{
+        alert("List is empty !! Failed attempt")
+    }
+ }
+
+
+
+ function replaceItem(){
+
+       if(itemList.childElementCount === 0){
+        alert("List is empty! Cannot replace.");
+        return;
+    }
+     let oldItemIndex;
+       do{
+            const userInput = prompt(`Enter the number of list item to replace [1 - ${itemList.childElementCount}]: `).trim();
+            oldItemIndex = parseInt(userInput , 10); 
+           //10 is base for decimal number system
+
+           if( !userInput || isNaN(oldItemIndex) ||  oldItemIndex < 1 || oldItemIndex > itemList.childElementCount )
+           {
+              alert("Enter the valid index ! ");
+           }
+           else{
+            break;
+           }
+        }while(true);
+
+       const oldItem = itemList.children[oldItemIndex -1 ];
+       const newItemText = prompt("Enter the new item: ").trim();
+       
+
+
+       if(newItemText == oldItem.textContent)
+       {
+        alert("Cannot replace with same item !!");
+        return;
+       }
+      
+       var newItem = document.createElement('li');
+       newItem.textContent = newItemText;
+
+    
+          itemList.replaceChild(newItem , oldItem);
+ }
+
+ function insertItem(){
+    //pehle user se puchenge ki konse ke upar chahiye 
+    //fir dekhenge ki sahi h kya input 
+    //fir new name puchenge 
+    //new item bnayenge 
+    //fir usmai content fill krenge 
+    //fir usko insert krdenge 
+
+    if(itemList.children.length === 0)
+    {
+      alert("List is empty !! Adding the first item") ;
+      addItem();
+      return;
+    }
+
+    let referenceIndex;
+
+
+    do{
+    const userInput = prompt(`Enter the item index where you want to insert : [1-${itemList.children.length}]`).trim();
+    referenceIndex = parseInt(userInput , 10);
+
+    if( isNaN(referenceIndex) || referenceIndex<1 || referenceIndex>itemList.children.length)
+    {
+        alert("Invalid input enter again !!");
+    }
+    else{
+        break;
+    }
+    }while(true);
+
+
+    const newItemText= prompt("Enter the new item to insert: ").trim();
+    const newItem = document.createElement('li');
+    newItem.textContent = newItemText;
+
+    const referenceItem = itemList.children[referenceIndex -1];
+    itemList.insertBefore(newItem,referenceItem);
+ }
+
+</script>
+
+
+</html>
