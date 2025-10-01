@@ -1,0 +1,105 @@
+<!-- create a tabbed interface where clicking on tabs displays different content sections without page reload  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabbed</title>
+    <link rel="stylesheet" href="task6.css" />
+  </head>
+
+
+  <body>
+    <div class="container">
+        <div class="tab">
+        <button id="me">About me</button>
+        <p class="me-description">Content about me... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem!</p>
+          </div>
+        
+          <div class="tab">
+        <button id="you">About you</button>
+        <p class="you-description">Content about you... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem!</p>
+          </div>
+        
+          <div class="tab">
+        <button id="us">About us</button>
+        <p class="us-description">Content about us... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem!</p>
+          </div>
+        
+          <div class="tab">
+        <button id="all">About all</button>
+        <p class="all-description">Content about all... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem!</p>
+          </div>
+        
+          <div class="tab">
+        <button id="none">About none</button>
+        <p class="none-description">Content about none... Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem magni illo cum, quos aliquam similique iure nulla est quod exercitationem!</p>
+          </div>
+    </div>
+  </body>
+
+
+  <script>
+    const buttons = document.querySelectorAll("button");
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        togglepara(btn.id);
+      });
+    });
+
+    function togglepara(id) {
+      //   let paraToDisplay;
+      //   switch (id) {
+      //     case "me":
+      //       paraToDisplay = document.querySelector(".me-description");
+      //       break;
+      //     case "you":
+      //       paraToDisplay = document.querySelector(".you-description");
+      //       break;
+      //     case "us":
+      //       paraToDisplay = document.querySelector(".us-description");
+      //       break;
+      //     case "all":
+      //       paraToDisplay = document.querySelector(".all-description");
+      //       break;
+      //     case "none":
+      //       paraToDisplay = document.querySelector(".none-description");
+      //       break;
+      //     default:
+      //       break;
+      //   }
+
+      const allPara = document.querySelectorAll("p");
+     
+      let paraToDisplay = document.querySelector(`.${id}-description`);
+      let wasVisible = false;
+
+      if( getComputedStyle(paraToDisplay).display == 'block')
+      {
+        wasVisible=true;
+      }
+
+      allPara.forEach((para)=>
+            {
+               para.style.display = 'none'; 
+            });
+     
+      if(!wasVisible)
+      {
+        paraToDisplay.style.display = 'block';
+      }      
+
+
+
+    //   if (!paraToDisplay) {
+    //     return;
+    //   }
+
+    //   let appearance = getComputedStyle(paraToDisplay).display;
+    //   paraToDisplay.style.display = appearance === "none" ? "block" : "none";
+
+            
+    }
+  </script>
+</html>
