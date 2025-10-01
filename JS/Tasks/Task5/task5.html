@@ -1,0 +1,62 @@
+<!-- Build a countdown timer that starts when click on a button and updates the display in real time  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <style>
+        .timer{
+            width:200px;
+            height: 40px;
+            font-size: larger;
+        }
+        .timer:disabled {
+            opacity: 1;           /* remove graying */
+            cursor: not-allowed;  /* optional to show disabled cursor */
+        }
+    </style>
+</head>
+<body>
+    <button class="timer">CountDown Begins...</button>
+</body>
+<script>
+    var btn = document.querySelector(".timer");
+    btn.addEventListener("click" , countDown);
+    function countDown(){
+        let timer;
+
+        do{
+        var input = prompt("How many seconds of CountDown does you want : ").trim();
+        timer = parseInt(input,10);
+
+         if(isNaN(timer) || timer<=0 )
+         {
+            alert("Enter a valid positive time !!");
+         }
+         else{
+            break;
+         }
+        }while(true);
+
+        
+        //    btn.disabled = true; 
+       
+        for(let i=timer;i>=0;i--)
+        { 
+           setTimeout(
+            ()=>
+            { 
+                btn.textContent=i ;
+                if(i==0)
+                {
+                  btn.disabled=false;
+                  btn.textContent="CountDown begins..."  
+                }
+              } ,(timer-i)*1000 
+           );
+        }
+    }
+</script>
+</html>
