@@ -1,0 +1,22 @@
+h1{
+        /* justify-self: center; */
+        text-align: center;
+}
+
+#intro{
+    display: flex;
+    justify-self: center; 
+    width: 20vw;
+    height: 20vh;
+    margin-top:10vh;
+    border: 2px solid  black;
+    font-size: 20px;
+}
+
+h3{
+    display: none;
+    color: red;
+    margin-left: 43vw;
+    margin-top: 0;
+    font-size: 0.8rem;
+}
