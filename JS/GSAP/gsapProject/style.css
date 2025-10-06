@@ -1,0 +1,123 @@
+main{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: black;
+    margin:0;
+    padding: 0;
+}
+
+.nav{
+    font-family: "Open Sans", sans-serif;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.heading h1{
+    padding-left: 20px;
+}
+.menu{
+    display: flex;
+    gap:30px;
+}
+
+.menu :nth-last-child(n){
+    padding-right: 20px;
+}
+
+
+/******************************************************************************************************/
+
+.main{
+    margin-top: 25vh;
+    position: relative;
+  
+}
+.main h1{
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 8rem;
+    line-height:2rem;
+    z-index:10;
+    position: relative;
+    /* background-color: red;    */
+}
+
+.main h1:nth-child(1)
+{
+    padding-left: 10%;
+}.main h1:nth-child(2)
+{
+    padding-left: 25%;
+}.main h1:nth-child(3)
+{
+    padding-left: 40%;
+}
+
+.main .images img{
+    width:200px;
+    height:300px;
+    position:absolute;
+    top:-50%;
+    border-radius: 6%;
+}
+
+#img1{
+    left:40%;
+    z-index:1;
+    rotate:-8deg;
+}#img2{
+    left:40%;
+    z-index:2;
+    rotate:-10deg;
+}#img4{
+    left:40%;
+    z-index:3;
+   rotate:-12deg;
+}
+#img5{
+    left:40%;
+    z-index:4;
+    rotate:-15deg;
+}
+#img3{
+    left:40%;
+    z-index:5;
+    rotate:-20deg;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer h2{
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color:white;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    text-align: center;
+}
