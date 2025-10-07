@@ -1,0 +1,24 @@
+#page1{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(163, 163, 244, 0.863);
+}#page2{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(113, 113, 167, 0.863);
+}
+#page3{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(75, 75, 98, 0.863);
+}
+
+.box{
+    height:40vh;
+    width:40vh;
+    background:linear-gradient(rgb(218, 211, 211),rgb(131, 131, 156));
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50% , -50%);
+}
