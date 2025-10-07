@@ -1,0 +1,31 @@
+#page1{
+  height: 100vh;
+  width: 100%;
+  background-color: #F7F7EE;
+}
+
+#page2{
+  padding:8vh;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #545E41;
+}
+
+#page2 h1{
+    font-family: pp woodland;
+    color:#434B34;
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 3rem;
+}
+
+#page2 h1 span{
+    font-family: pp woodland;
+    /* color: #F7F7EE; */
+}
+
+#page3{
+  height: 100vh;
+  width: 100%;
+  background-color:#F7F7EE;
+}
