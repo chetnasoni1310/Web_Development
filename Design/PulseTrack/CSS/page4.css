@@ -1,0 +1,107 @@
+/***************************************Page 4*************************/
+
+.page-4 {
+  /* height: 100vh; */
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../assets/greenbg.avif") center/cover no-repeat;
+}
+
+.page-4 h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #ffffff;
+  padding-left: 60px;
+  padding-top: 7vh;
+  font-family: "Poppins", sans-serif;
+  /* background-color: red; */
+}
+
+.page-4 form {
+  /* background-color: red; */
+  /* height: 70vh; */
+  margin: 7vh 58vw 0 60px;
+  display: grid;
+  grid-template-columns: 40vw;
+  grid-template-rows: 7vh 6vh 7vh 6vh 31vh 6vh 5vh;
+  border-radius: 21;
+  position: relative;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+  border-radius: 21px; /* adjust the value as you like */
+  border: 1px solid #ccc;
+  padding: 10px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 20px;
+  color: #f4f2f2;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #00ff6a; /* highlight color */
+  box-shadow: 0 0 8px #00ff6a;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #f4f2f2;
+  opacity: 1; /* make sure it’s not faded */
+  font-size: 16px;
+}
+
+#message {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 10px;
+  resize: none;
+
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+  line-height: 1.5;
+
+  vertical-align: top;
+  text-align: left;
+}
+
+#message::placeholder {
+  vertical-align: top; /* optional, depends on browser */
+}
+
+#submit {
+  background-color: rgb(3, 85, 3);
+  text-align: center;
+  width: 10vw;
+  position: absolute;
+  top: 63vh;
+  left: 30vw;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 21px;
+  background: #0a0a0a; /* or transparent if you want it to blend with the page */
+  color: #aaa;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* position: relative; or fixed if you want it always visible */
+  height: 5vh;
+}
+
+footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}

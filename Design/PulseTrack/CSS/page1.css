@@ -1,0 +1,134 @@
+/***********************************************************************Page 1**********/
+.page-1 {
+  height: 100vh;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  /* background-color: rgb(108, 113, 117); */
+  min-height: 6vh;
+}
+nav .nav-part1 {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+nav .nav-part1 img {
+  width: 36px;
+  height: 39px;
+}
+
+nav .nav-part1 h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 27px;
+}
+
+nav .nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+nav .nav-part2 h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1;
+}
+nav .nav-part2 button {
+  width: 137px;
+  height: 40px;
+  padding: 0px 10px; /* 10px vertical, 24px horizontal */
+  background-color: #00a946;
+  /* background-color: #0071bd; */
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/****Hero Section****************/
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* gap: 2rem; */
+  padding: 0px 60px;
+  justify-content: center;
+  margin-top: 5vh;
+  min-height: 80vh;
+  /* position: relative; */
+}
+
+.hero-section .about {
+  /* background-color: red; */
+
+  /* display: grid;
+    grid-template-rows: 17% 17% 10%;
+    align-items: center;
+    padding-top: 30px; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 10px; */
+}
+
+.hero-section .about h1 {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #f2f2f3;
+  margin: 2px 0;
+}
+
+.hero-section .about h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  width: 470px;
+  height: 114px;
+  margin-top: 23px;
+}
+
+.hero-section .about button {
+  width: 230px;
+  height: 50px;
+  padding: 0px 10px; /* 10px vertical, 24px horizontal */
+  background-color: #00a946;
+  /* background-color: #0071bd; */
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 64px;
+  /* margin-top: 10px; */
+}
+
+.hero-section .fitband {
+  /* background-color: pink; */
+  position: relative;
+}
+
+.hero-section .fitband img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  left: 8%;
+  top: -1%;
+}

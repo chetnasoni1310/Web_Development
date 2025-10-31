@@ -1,0 +1,110 @@
+/***********************************************************************Page 2 **********/
+.page-2 {
+  height: 100vh;
+  width: 100%;
+}
+
+.page-2 h1 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #ffffff;
+  padding-left: 60px;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-2 .guide h3 {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  padding-left: 60px;
+}
+
+.card-container {
+  margin: 29px 60px;
+  height: 70vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+ width: 28vw;
+    height: 78vh;
+  border-radius: 50px;
+  background-color: #615f63;
+  position: relative;
+  overflow: hidden;
+
+  /* smooth hover transitions */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* fade-in entry */
+  opacity: 0;
+  animation: fadeIn 1.3s ease forwards;
+  will-change: transform, opacity;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  /* box-shadow: 0 20px 40px rgba(104, 111, 104, 0.4); */
+  box-shadow: 0 20px 40px rgba(104, 111, 104, 0.4),
+    /* soft depth shadow */ 0 0 20px #56dd8e,
+    /* inner green glow */ 0 0 30px #97e4b7; /* outer green glow */
+}
+
+.card img {
+  width: 100%;
+  height: 63%;
+  object-fit: contain;
+  padding-top: 35px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1) translateY(-10px);
+}
+
+.card .step {
+  position: relative;
+  padding: 0px 22px;
+}
+
+.card .step h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: -6px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.card .step h3 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #e0e0e0;
+}
