@@ -1,0 +1,4 @@
+body ke niche lgne wale tags - gsap pehle -> scrolltrigger -> script
+
+voh loader mai gsap lagaya tha usmai content niche se aata hua dikh rha tha toh humne overflow hidden krdia , mtlb ki .line class ke bahar agar content hai toh voh hidden rhega jaise hi andar aayega tbhi humein show hoga 
+

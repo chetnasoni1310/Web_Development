@@ -1,0 +1,72 @@
+.loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  /* background-color: rgb(226, 161, 161); */
+}
+
+.loadingLines {
+  font-size: 2.5vw;
+  /* background-color: rgb(149, 149, 241); */
+  height: fit-content;
+  padding: 17vw;
+  padding-bottom: 10vh;
+}
+
+.timer h3 {
+  opacity: 0;
+  animation: fadeIn 3.5s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.timer h3 span {
+  overflow: hidden;
+  opacity: 1;
+}
+
+.loadingLines h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.line {
+  /* background-color: green; */
+  overflow: hidden;
+}
+
+.line .line1 {
+  height: 8.5vh;
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+
+.line1 h3 {
+  margin-top: 3.2vh;
+  font-family: "Aguafina Script", sans-serif;
+}
+
+.waitingRequest h6 {
+  font-size: 1vw;
+  font-weight: 200;
+  padding-left: 30vw;
+}
+
+#fontSwitch {
+  transition: font-family 0.5 ease;
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-style: italic;
+}
+
+

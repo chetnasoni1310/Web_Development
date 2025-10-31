@@ -75,6 +75,7 @@ textarea::placeholder {
   text-align: left;
 }
 
+
 #message::placeholder {
   vertical-align: top; /* optional, depends on browser */
 }
