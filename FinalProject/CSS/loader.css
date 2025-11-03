@@ -7,11 +7,11 @@
 }
 
 .loadingLines {
-  font-size: 2.5vw;
+  font-size: 3vw;
+  /* font-size: 2.5vw; */
   /* background-color: rgb(149, 149, 241); */
   height: fit-content;
-  padding: 17vw;
-  padding-bottom: 10vh;
+  padding: 17vw 0 10vh 17vw;
 }
 
 .timer{
@@ -76,10 +76,10 @@
 
 
 .fontSwitch {
-  font-size: 5vw;
+  font-size: 6vw;
   position: absolute;
   top: 0vh;
-  left: 47vw;
+  left: 56vw;
   transition: opacity 0.2s ease, font-family 0.3s ease;
   font-family: "Big Shoulders Inline", sans-serif;
   font-optical-sizing: auto;
