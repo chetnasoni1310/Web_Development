@@ -3,7 +3,7 @@
   width: 100%;
   position: fixed;
   z-index: 999;
-  /* background-color: rgb(226, 161, 161); */
+  background-color: #0B0B0B;
 }
 
 .loadingLines {
@@ -11,20 +11,20 @@
   /* font-size: 2.5vw; */
   /* background-color: rgb(149, 149, 241); */
   height: fit-content;
-  padding: 17vw 0 10vh 17vw;
+  padding: 14vw 0 10vh 17vw;
 }
 
 .timer{
   opacity: 0;
   animation: fadeIn 3.5s ease forwards;
   display: flex;
-  gap: 0.4vw;
-   font-family: "Aguafina Script", sans-serif;
+  gap: 0.3vw;
+  font-family: "Aguafina Script", sans-serif;
   font-weight: 300;
 }
 
 .count{
-  min-width: 3vw;
+  min-width: 4vw;
 }
 @keyframes fadeIn {
   from {
@@ -60,7 +60,7 @@
   height: 10vh;
   display: flex;
   align-items: center;
-  gap: 5vw;
+  gap: 6.5vw;
 }
 
 /* .line1 h3 {

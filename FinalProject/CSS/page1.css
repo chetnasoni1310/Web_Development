@@ -1,0 +1,163 @@
+.page1 {
+  background-color: #151515;
+  /* background-color: red; */
+  /* height: 100vh; */
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.page2 {
+  /* background-color: #151515; */
+  background-color: red;
+  height: 100vh;
+  width: 100%;
+  /* position: relative; */
+  margin: 0;
+  padding: 0;
+}
+
+.page1 .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4vh 6vh;
+  position: relative;
+}
+
+.nav .nav-part1 {
+  flex: 0.3;
+  display: flex;
+  gap: 1.2vw;
+  align-items: center;
+  position: fixed;
+  opacity: 1;
+  /* opacity: 0; */
+  top: 5vh;
+  left: 6vh;
+  z-index: 999;
+}
+
+.nav .nav-part1 .logo img {
+  width: 1.2vw;
+  height: 2vh;
+}
+.nav .nav-part1 .title h3 {
+  font-size: 2vw;
+  margin: 0;
+}
+.nav .nav-part2 {
+  flex: 0.7;
+  margin-left: 38vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 70vw;
+}
+
+.nav-part2-part1 h3 {
+  font-size: 1.12vw;
+  font-weight: 200;
+  margin: 0;
+}
+
+.nav .nav-part2-part2 ul {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+  margin: 0;
+}
+
+.nav-part2-part2 ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.12vw;
+  font-weight: 200;
+}
+
+.heading {
+  padding: 15vh 0 0 24vw;
+}
+.heading h1 {
+  font-size: 7vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 1vh;
+  max-height: 13vh;
+}
+
+.heading :nth-child(3) span {
+  text-decoration: underline;
+  text-underline-offset: 1.2vh;
+}
+
+.firstLineOfHeading {
+  position: relative;
+}
+
+.heading h1 span {
+  color: white; /* fallback color */
+  -webkit-text-stroke: 1px white;
+}
+
+.heading h1 span:hover {
+  -webkit-text-fill-color: transparent; /* removes inner fill only */
+  text-decoration: none;
+}
+
+
+.scrollElement {
+  position: absolute;
+  top: 77vh;
+  left: 6vh;
+}
+
+.scrollElement h2 {
+  font-size: 1.2vw;
+  font-weight: 100;
+  color: grey;
+  opacity: 1;
+}
+
+.videoContainer {
+  padding: 18vh 0 7vh 25vw;
+  position: relative;
+}
+.videoContainer video {
+  width: 100%;
+  height: 76vh;
+  object-fit: cover;
+}
+
+.videoContainer #page1-image{
+    opacity: 1;
+    width: 75%;
+    height: 77vh;
+    position: absolute;
+    object-fit: cover;
+    top: 17%;
+    left: 25%;
+    opacity: 1;
+}
+
+.playButton {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 50%;
+  background-color: #ffa63d;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#playButton1 {
+  top: 0;
+  left: 75%;
+}
+
+.playButton .icon i {
+  font-size: 4vw;
+}
+
