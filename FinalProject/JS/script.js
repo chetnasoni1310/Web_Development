@@ -1,3 +1,13 @@
+function cursor(){
+  document.addEventListener("mousemove",function(pointer_details){
+   gsap.to(".cursor",{
+    left:pointer_details.x,
+    top:pointer_details.y,
+   });
+  });
+}
+// cursor(); 
+
 function loaderAnimation() {
   // --- 1️⃣ Animate text lines in order ---
   gsap.from(".line h1", {
@@ -118,7 +128,6 @@ function loaderAnimation() {
   }
 }
 
-
 function stopLoader() {
   let loader = document.querySelector(".loader");
   loader.style.display = "none";
@@ -127,13 +136,11 @@ function stopLoader() {
 // loaderAnimation();
 stopLoader();
 
-
-
 function page1Animation() {
-  function videoAnimation(){
+  function videoAnimation() {
     const videoClick = document.getElementById("page1-video");
     const imageClick = document.getElementById("page1-image");
-  
+
     imageClick.addEventListener("click", function () {
       if (videoClick.paused) {
         imageClick.style.opacity = "0";
@@ -146,21 +153,43 @@ function page1Animation() {
   }
   videoAnimation();
 
-  function scrollElementAnimation(){
-    const tl = gsap.timeline({ repeat: -1 }); // infinite loop
-  
-    tl.fromTo(
-      ".scrollElement h2",
-      { y: 20, opacity: 0 }, // starting position
-      { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" } // fade in + up
-    ).to(
-      ".scrollElement h2",
-      { y: -15, opacity: 0, duration: 0.5, ease: "power2.in", delay: 0.8 } // pause before going up
-    );
+  function scrollElementAnimation() {
+    const tl = gsap.timeline({
+      repeat: -1,
+      // repeatDelay: 0.3,
+    }); // infinite loop
+
+    tl.from(".scrollElement h2", {
+      y: -15,
+      delay: 0.3,
+      duration: 0.5,
+      opacity: 0,
+      ease: "power1.in",
+    })
+    .to(".scrollElement h2", {
+      y: 15,
+      delay: 0.6,
+      duration: 0.5,
+      opacity: 0,
+      ease: "power2.out",
+    });
   }
   scrollElementAnimation();
 
-  
+  function linesEntryAnimation() {
+    gsap.from("#page1Heading h1:nth-child(n)", {
+      y: 100,
+      opacity: 0,
+      stagger: 0.25,
+      duration: 1.2,
+      ease: "power4.out",
+    });
   }
+  linesEntryAnimation();
+}
+// page1Animation();
 
-page1Animation();
+function page2Animation() {
+ 
+}
+page2Animation();
