@@ -99,13 +99,6 @@ main{
 }
 
 
-.truncate {
-  width: 500px;            /* must have fixed width */
-  white-space: nowrap;     /* prevent wrapping */
-  overflow: hidden;        /* hide overflowing text */
-  text-overflow: ellipsis; /* show ... */
-}
-
 #upper::-webkit-scrollbar{
     background-color: transparent;
     height:5px;
@@ -115,6 +108,13 @@ main{
     background-color: rgb(63, 53, 63);
 }
 
+
+.truncate {
+  width: 500px;            /* must have fixed width */
+  white-space: nowrap;     /* prevent wrapping */
+  overflow: hidden;        /* hide overflowing text */
+  text-overflow: ellipsis; /* show ... */
+}
 
 
 .elem{
