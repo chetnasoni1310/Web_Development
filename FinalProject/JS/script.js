@@ -6,20 +6,20 @@ function cursor(){
    });
   });
 }
-// cursor(); 
+cursor(); 
 
 function loaderAnimation() {
-  // --- 1️⃣ Animate text lines in order ---
+  //  Animate text lines in order ---
   gsap.from(".line h1", {
     y: 150,
     opacity: 0,
     stagger: 0.2,
     duration: 0.6,
-    delay: 0.7, // slightly earlier start for smooth timing
+    delay: 0.7, 
     ease: "power3.out",
   });
 
-  // --- 2️⃣ Animate the counter ---
+  //Animate the counter ---
   gsap.from(".count", {
     y: 200,
     opacity: 0,
@@ -28,7 +28,7 @@ function loaderAnimation() {
     ease: "power3.out",
   });
 
-  // --- 3️⃣ Animate 'NOW' appearing with the last line ---
+  //  Animate 'NOW' appearing with the last line ---
   gsap.from(".fontSwitch", {
     y: 150,
     opacity: 0,
@@ -38,7 +38,7 @@ function loaderAnimation() {
     onComplete: startBlinkingAndCounter, // trigger after it's visible
   });
 
-  // --- 4️⃣ Animate the waiting text ---
+  //  Animate the waiting text ---
   gsap.from(".waitingRequest h6", {
     y: 450,
     delay: 1.8,
@@ -47,7 +47,7 @@ function loaderAnimation() {
     ease: "power3.out",
   });
 
-  // --- 🌟 Function to sync blinking + counter ---
+  // Function to sync blinking + counter ---
   function startBlinkingAndCounter() {
     const fontSwitch = document.querySelector(".fontSwitch");
     const fonts = ['"Big Shoulders Inline", sans-serif', '"Inter", sans-serif'];
@@ -133,8 +133,8 @@ function stopLoader() {
   loader.style.display = "none";
 }
 
-// loaderAnimation();
-stopLoader();
+loaderAnimation();
+// stopLoader();
 
 function page1Animation() {
   function videoAnimation() {
@@ -187,7 +187,7 @@ function page1Animation() {
   }
   linesEntryAnimation();
 }
-// page1Animation();
+page1Animation();
 
 function page2Animation() {
  

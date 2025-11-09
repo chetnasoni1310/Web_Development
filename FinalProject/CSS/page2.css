@@ -1,19 +1,9 @@
 .page2 {
   background-color: #151515;
-  height: 500vh;
+  /* height: 500vh; */
   width: 100%;
   margin: 0;
   padding: 0;
-}
-.page3 {
-  /* background-color: #151515; */
-  background-color: rgb(159, 175, 160);
-  height: 100vh;
-  width: 100%;
-  /* position: relative; */
-  margin: 0;
-  padding: 0;
-  padding-top: 5vh;
 }
 
 #page2Heading h1 {

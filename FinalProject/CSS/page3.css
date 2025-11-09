@@ -1,0 +1,18 @@
+.page3 {
+  /* background-color: #151515; */
+  background-color: rgb(159, 175, 160);
+  height: 100vh;
+  width: 100%;
+  /* position: relative; */
+  margin: 0;
+  padding: 0;
+  /* padding-top: 5vh; */
+}
+
+
+#page3Heading h1 {
+  border-bottom: 1px solid white;
+  padding-bottom: 9vh;
+  margin-right: 6vh;
+}
+
