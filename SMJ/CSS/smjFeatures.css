@@ -1,0 +1,94 @@
+.smjFeatures {
+  /* height: 100vh; */
+  margin-top: 7vh;
+  padding: 0 2vw;
+}
+
+.features{
+    margin: 5vh auto;
+    margin-bottom: 0;
+    /* padding: 0 auto; */
+    /* background-color: pink; */
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3vw;
+    justify-content: space-between;
+     --gold-gradient: linear-gradient(135deg, #FFD700, #b8e68a, #e0e645);
+}
+
+.features .feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 3px; */
+}
+
+.features .feature h3{
+    font-weight: 500;
+    max-width: 7vw;
+    text-align: center;
+    font-size: 2vh;
+    margin: 1vh 0;
+}
+.features .feature svg{
+    scale:0.7;
+}
+
+
+.features .feature svg path {
+  fill: #a29964e6; /* base fallback */
+  stroke: none;
+}
+
+.features .feature svg {
+  filter: brightness(1.01) contrast(1.1)
+          drop-shadow(0.5vh 0.5vh 0.5vh rgba(143, 116, 7, 0.459));
+}
+
+ #h3text h3{
+    min-width: 8vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .featureDivider{
+    /* background-color: red; 
+    margin: 16vh 0;
+    display: flex;
+  justify-content: center; 
+  margin: 1vh 0;
+} */
+
+/* .featureDivider {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+
+.featureDivider svg {
+  display: block;
+  width: auto;
+  height: auto;
+  opacity: 0.5;
+}
+
+#featureDivider2{
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+} */

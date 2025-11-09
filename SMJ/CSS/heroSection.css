@@ -1,0 +1,160 @@
+.heroSection {
+  /* width: 100%; */
+  /* height: 100vh; */
+  margin: 0;
+  padding: 0;
+  /* background-color: #FEF9EF; */
+  /* background-color: #faf6f0; */
+  /* overflow-x: hidden; */
+}
+
+/***********************nav **************************************/
+nav .nav1 {
+  /* background-color: pink; */
+  /* width: 100%; */
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+
+.nav1 .nav1-part1 img {
+  /* padding-top: 2vw; */
+  height: 8vh;
+  width: 4vw;
+}
+
+.nav1 .nav1-part2 {
+  width: 37%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav1 .nav1-part2 .searchBar {
+  width: 25vw;
+  height: 5vh;
+  /* background-color: red; */
+  border-radius: 2vw;
+  border: 1px solid black;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+.searchIcon {
+  width: 3vw;
+  height: 3vh;
+  fill: #636846;
+}
+
+.searchBar h3 {
+  font-size: 1.12vw;
+  font-weight: 100;
+  color: #636846;
+  opacity: 0.6;
+  margin: 0;
+}
+/* .nav1 .nav1-part2 .navIcons {
+  /* background-color: red; 
+} */
+.navIcon {
+  /* padding-top: 5vh; */
+  width: 3vw;
+  height: 5vh;
+  fill: #636846;
+} 
+
+
+/***********************nav 2 **************************************/
+
+nav .nav2 {
+  /* background-color: pink; */
+  /* width: 100%; */
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4.6vw;
+}
+.nav2 .navCatalogue {
+  border: 1px solid black;
+  border-radius: 2vw;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 4.3vw;
+  padding-left: 2vw;
+}
+.nav2 .navCatalogue .catalogue {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  min-width: 9vw;
+  min-height: 6vh;
+}
+
+
+.nav2 .navCatalogue .catalogue .nav2Icon {
+  width: 1.4vw;
+}
+.nav2 .navCatalogue .catalogue #nav2Icon1 {
+  width: 1.4vw;
+}
+.nav2 .navCatalogue .catalogue #nav2Icon2 {
+  width: 1.7vw;
+}
+.nav2 .navCatalogue .catalogue #nav2Icon3 {
+  width: 1.4vw;
+}
+.nav2 .navCatalogue .catalogue #nav2Icon4 {
+  width: 1.2vw;
+}
+.nav2 .navCatalogue .catalogue #nav2Icon5 {
+  width: 1.4vw;
+}
+.nav2 .navCatalogue .catalogue #nav2Icon6 {
+  width: 1.4vw;
+}
+.nav2 .navCatalogue .catalogue #nav2Icon7 {
+  width: 1.4vw;
+}
+
+.nav2 .navCatalogue .catalogue h3 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin: 0;
+}
+
+/***********************banner  **************************************/
+
+.banner {
+  /* background-color: rgb(236, 196, 203); */
+  margin-top: 4vh;
+}
+
+.bannerContent {
+  /* background-color: pink; */
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1vw;
+  overflow-x: auto;
+}
+
+.bannerContent::-webkit-scrollbar {
+  background-color: transparent;
+  height: 4px;
+}
+.bannerContent::-webkit-scrollbar-thumb {
+  background-color: rgba(63, 53, 63, 0.326);
+  mix-blend-mode: difference;
+}
+
+.bannerContent img {
+  flex-shrink: 0;
+  width: 70%;
+  height: 58vh;
+  object-fit: cover;
+}

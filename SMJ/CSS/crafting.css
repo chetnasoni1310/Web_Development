@@ -1,0 +1,43 @@
+.crafting {
+  /* height: 100vh; */
+  margin-top: 7vh;
+  padding: 0 2vw;
+}
+
+
+.steps{
+    /* background-color: pink; */
+    padding:0 2vw;
+}
+.steps  .step{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 12vw;
+    /* border:1px solid black; */
+}
+.steps .step img{
+    width: 18%;
+}
+.steps .step h3{
+   font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 1.7vw;
+    width: 40%;
+    /* background-color: yellow; */
+    height: fit-content;
+}
+
+.steps .step h3:nth-child(n+2)
+{
+    text-align: right;
+}
+
+.divider{
+    /* background-color: red; */
+    display: flex;
+  justify-content: center; 
+  margin: 1vh 0;
+}
+

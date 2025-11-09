@@ -1,0 +1,94 @@
+.trending {
+  /* height: 300vh; */
+  margin-top: 7vh;
+  padding: 0 2vw;
+}
+
+
+.trendingContainer{
+    position: relative;
+    margin-top: 7vh;
+    height: 70vh;
+    overflow: hidden;
+    /* background-color: pink; */
+    /* display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;*/
+    /* align-items: center;
+    justify-content: center;  */
+    /* text-align: center; */
+}
+
+.trendingContainer .trendingCard{
+  position: absolute;
+    --width : 20vw;
+    width:var(--width) ;
+    --height: 70vh;
+    height: var(--height);
+    /* background-color: red; */
+     /* STANDARD but above one is new --
+    left:calc(50% - (var(--width) / 2)) ;
+    top: calc(50% - (var(--height) / 2));
+    */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); 
+    border-radius:  0.85vw;
+    opacity: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.trendingContainer .trendingCard video{
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius:  0.85vw;
+}
+
+.trendingCard.active{
+  transform: translate(-50%,-50%) scale(1);
+  opacity: 1;
+  z-index: 4;
+}
+
+.trendingCard.left{
+  transform: translate(calc(-50% - 10vw), -50%) scale(0.8);
+  opacity: 1;
+  z-index: 3;
+}
+.trendingCard.secondLeft{
+  transform: translate(calc(-90% - 10vw), -50%) scale(0.6);
+  opacity: 1;
+  z-index: 2;
+}
+.trendingCard.right{
+  transform: translate(calc(-50% + 10vw),-50%) scale(0.8);
+  opacity: 1;
+  z-index: 3;
+}
+.trendingCard.secondRight{
+  transform: translate(calc(-10% + 10vw),-50%) scale(0.6);
+  opacity: 1;
+  z-index: 2;
+}
+
+
+#prev , #next{
+  position: absolute;
+  top: 50%;
+  color: #343726;
+  background-color: transparent;
+  border: none;
+  font-size:3rem;
+  font-weight: 100;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prev{
+  left: 2%;
+}
+
+#next{
+  right: 2%;
+}

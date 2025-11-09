@@ -1,0 +1,121 @@
+.exploreByType {
+  /* height: 100vh; */
+  margin-top: 7vh;
+  padding: 0 2vw;
+}
+
+.circularCards {
+  margin: 2vh 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 65vh;
+}
+.wrapper {
+  /* background-color: rgb(166, 255, 0); */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.inner {
+  /* background-color: pink; */
+  --w: 14vw;
+  --h: 32vh;
+  --translateZ: calc((var(--w) + var(--h)) + 0px);
+  --rotateX: -4deg;
+  --perspective: 160vw;
+   /*  --perspective: 32vw;    Feels like we are inside the circle*/
+  position: absolute;
+  width: var(--w);
+  height: var(--h);
+  top: 15%;
+  left: calc(50% - (var(--w) / 2) - 2.5px);
+  z-index: 2;
+  transform-style: preserve-3d;
+  transform: perspective(var(--perspective));
+  animation: rotating 20s linear infinite;
+
+  /* transition: animation-play-state 0.3s ease; */
+  cursor: pointer;
+
+}
+@keyframes rotating {
+  from {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+      rotateY(0);
+  }
+  to {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX))
+      rotateY(1turn);
+  }
+}
+
+.circularCard {
+  /* background-color: yellow; */
+  height: 38vh;
+  position: absolute;
+  /* border: 2px solid #343726; */
+  border-radius: 0.85vw;
+  overflow: hidden;
+  inset: 0;
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+    translateZ(var(--translateZ));
+
+  transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
+}
+
+.circularCardImage {
+  width: 100%;
+  height: 100%;
+}
+
+.circularCardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #0000
+    radial-gradient(
+      circle,
+      rgba(var(--color-card), 0.2) 0%,
+      rgba(var(--color-card), 0.6) 80%,
+      rgba(var(--color-card), 0.9) 100%
+    );
+}
+
+/**Effects ---------------->> ***************/
+
+.circularCard:hover {
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+    translateZ(calc(var(--translateZ) + 4vw)); /* lift forward */
+  box-shadow: 0 0 25px rgba(255, 215, 100, 0.3);
+  border-color: #d6c27c; /* soft gold border */
+}
+
+.circularCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.8s ease;
+}
+
+.circularCard:hover::after {
+  left: 125%;
+}
+
+/* .circularCards:hover .inner {
+  animation-play-state: paused;
+} */

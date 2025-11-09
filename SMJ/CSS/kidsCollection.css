@@ -1,0 +1,89 @@
+.kidsCollection {
+  /* height: 100vh; */
+  margin-top: 7vh;
+  padding: 0 2vw;
+}
+
+.kidsCards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1vw;
+  /* background-color: red; */
+  /* margin: 9vh 0; */
+  /* padding: 0 3vw; */
+  margin: 5vh 0;
+  margin-bottom: 0;
+}
+.kidsCards .kidsCard {
+  flex-shrink: 0;
+  /* width: 12vw; */
+  height: auto;
+  /* border-radius: none; */
+  /* background-color: red; */
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 1rem;
+  cursor: pointer;
+   /* user-select: none; */
+}
+
+.imgWrapper{
+   position: relative; /* ✅ anchor the ::after shimmer */
+  overflow: hidden;
+  border-radius: 50%; /* ✅ to match the image */
+}
+.kidsCards .kidsCard .imgWrapper img {
+  flex-shrink: 0;
+  width: 12vw;
+  height: 12vw;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d6c27c;
+  transition: all 0.4s ease;
+}
+
+.kidsCards .kidsCard h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 400;
+  /* background-color: aqua; */
+}
+.kidsCards::-webkit-scrollbar {
+  background-color: transparent;
+  height: 2px;
+}
+.kidsCards::-webkit-scrollbar-thumb {
+  background-color: rgba(63, 53, 63, 0.121);
+  mix-blend-mode: difference;
+}
+
+.kidsCards .kidsCard:hover img {
+  scale: 1.05;
+  box-shadow: 0 0 2rem rgba(255, 215, 100, 0.3);
+  border-color: #d6c27c; /* soft gold border */
+}
+
+.imgWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.8s ease;
+}
+
+.imgWrapper:hover::after {
+  left: 90%;
+}

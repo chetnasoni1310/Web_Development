@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  /* background-color: #faf6f0; */  /*Pehle wala */  
+  background-color: #FEF9EF;
+  color: #343726;
+  font-family: "Mulish", sans-serif;
+  /* font-family: "Cormorant Garamond", serif; */
+  /* overflow-x: hidden; */
+}
+
+/**** Heading and its Content **********************/
+ .heading h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.4vw;
+  font-weight: 600;
+  color: #343726;
+  margin-bottom: 2vh;
+}
+
+ .heading h3 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height:1.7vw;
+  width: 100%;
+}
+
+
