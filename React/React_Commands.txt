@@ -1,0 +1,10 @@
+This include some commands I face
+
+npm create vite@latest
+npm run dev 
+
+
+For tailwind
+npm install tailwindcss @tailwindcss/vite
+
+
