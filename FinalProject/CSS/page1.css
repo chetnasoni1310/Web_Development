@@ -21,12 +21,12 @@
   display: flex;
   gap: 1.2vw;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   opacity: 1;
   /* opacity: 0; */
   top: 5vh;
   left: 7vh;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .nav .nav-part1 .logo img {

@@ -20,22 +20,22 @@
   margin-top: 1vh;
 }
 
-.page-3 .image {
+ .page-3 .image {
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
- .page-3 .image img {
+ /*.page-3 .image img {
   width: 100%;
   opacity: 0;
   transform: translateY(-100px) rotateY(0deg);
   transition: all 1s ease-out;
   transform-style: preserve-3d;
   backface-visibility: hidden;
-} 
-@keyframes slideDownAppear {
+}  */
+/* @keyframes slideDownAppear {
   0% {
     opacity: 0;
     transform: translateY(-100px) scale(0.9);
@@ -48,16 +48,16 @@
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-}
+} */
 /* Horizontal flip rotation  */
-@keyframes rotateYImage {
+/* @keyframes rotateYImage {
   0% {
     transform: translateY(0) rotateY(0deg);
   }
   100% {
     transform: translateY(0) rotateY(360deg);
   }
-}
+} */
 
 /* Trigger both animations in sequence */
 .page-3 .image img.animate {
@@ -69,19 +69,19 @@
 
 
 /* Initial hidden state (before entering view) */
-/* .page-3 model-viewer {
+ .page-3 model-viewer {
   opacity: 0;
   transform: translateY(100px) rotateY(0deg);
   transition: opacity 1s ease, transform 1.2s ease;
 }
 
-/* When the model enters the page 
+/* When the model enters the page  */
 .page-3 model-viewer.visible {
   opacity: 1;
   transform: translateY(0) rotateY(0deg);
 }
 
-/* After it appears, start gentle rotation 
+ /* After it appears, start gentle rotation  */
 @keyframes horizontalRotate {
   from {
     transform: rotateY(0deg);
@@ -93,9 +93,7 @@
 
 .page-3 model-viewer.rotate {
   animation: horizontalRotate 8s linear infinite;
-} */
-
-
+}
 
 .page-3 .features hr {
   border: none; /* remove default HR border */
