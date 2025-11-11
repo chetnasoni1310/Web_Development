@@ -1,0 +1,6 @@
+ React is not a language 
+ React is not a framework 
+ React is not a technology 
+ React is a "LIBRARY" 
+
+ DEVELOPED IN 2013 BY FACEBOOK ENGINEER and get open source in 2015
