@@ -1,0 +1,27 @@
+{
+This include some commands I face
+
+npm create vite@latest
+npm run dev 
+
+For tailwind
+{npm install tailwindcss @tailwindcss/vite}
+
+{ //config file mai
+import tailwindcss  from '@tailwindcss/vite';
+tailwindcss();}
+
+{index.css mai 
+@import "tailwindcss";
+}
+}
+
+
+
+
+{
+//It's okay to keep unused data (react / typescript ) if they are all caps OR starts with _ 
+const data = [1, 2, 3];  // ❌ Warning
+const _data = [1, 2, 3]; // ✅ OK (matches pattern)
+const DATA = [1, 2, 3];  // ✅ OK (matches pattern)
+}
