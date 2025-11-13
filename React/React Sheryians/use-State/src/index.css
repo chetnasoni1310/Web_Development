@@ -5,3 +5,11 @@
   /* color: aliceblue;
   background-color: rgb(64, 169, 211); */
 }
+
+
+.advanceButton.isFree{
+   background-color: rgb(238, 77, 32);
+}
+.advanceButton.isArrested{
+   background-color: rgb(64, 169, 211);
+}
