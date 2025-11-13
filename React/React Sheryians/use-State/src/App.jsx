@@ -3,6 +3,7 @@ import React from 'react'
 import BasicUsestate from './Component/Basic-usestate'
 import ToggleuseState from './Component/toggleuseState'
 import ValueIncrementor from './Component/ValueIncrementor'
+import ObjectUsestate from './Component/InObjectIntermediateUsestate'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      <BasicUsestate/>
      <ToggleuseState/>
      <ValueIncrementor/>
+     <ObjectUsestate/>
     </div>
   )
 }
