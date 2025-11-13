@@ -38,7 +38,7 @@ function BasicUsestate() {
     <div>
        <h1>{score}</h1>
       <button onClick={()=>setScore(200)} className='setScore'>Update score</button>
-      <button onClick={()=>userPrompt()} className='setScore'>Update score - 2</button>
+      <button onClick={()=>userPrompt()} className='setScore'>Update score manually</button>
     </div>
   )
 }
