@@ -6,6 +6,7 @@ import ValueIncrementor from './Component/ValueIncrementor'
 import ObjectUsestate from './Component/InObjectIntermediateUsestate'
 import AdvanceButtonColorChanging from './Component/AdvanceButtonColorChanging'
 import AdvanceObjectPropertyAdder from './Component/AdvanceObjectPropertyAdder'
+import AdvanceArrayValueAdder from './Component/AdvanceArrayValueAdder'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
      <ObjectUsestate/>
      <AdvanceButtonColorChanging/>
      <AdvanceObjectPropertyAdder/>
+     <AdvanceArrayValueAdder/>
     </div>
   )
 }
