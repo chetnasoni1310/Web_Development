@@ -1,0 +1,18 @@
+⭐ What are Props?
+Props = data passed from one component to another.
+Full form: properties
+They are like function arguments for components.
+Think of it like this:
+If components are functions, then props are their parameters.
+
+
+
+**  Use to make react components reusable **
+
+
+⭐ Analogy (BEST one):
+Imagine a React component is like a custom “coffee machine.”
+<Coffee flavor="Vanilla" size="Large" />
+You are passing props to the machine:
+flavor = "Vanilla"
+size = "Large"
