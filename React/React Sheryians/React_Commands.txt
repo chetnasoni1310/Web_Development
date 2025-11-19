@@ -1,6 +1,9 @@
 {
 This include some commands I face
 
+
+/* eslint-disable no-unused-vars */
+
 npm create vite@latest
 npm run dev 
 

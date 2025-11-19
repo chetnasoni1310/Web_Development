@@ -1,0 +1,51 @@
+// Ab jab hum submit krte hai kisi bhi form ko toh humara page jo h voh refresh hota hai but we don't want that 
+// Hum chahte h ki voh baari baari refresh naa ho jaaye
+
+//Toh yeh cheezacheive krne ke 3 tarike hai 
+1. useRef -  easiest
+2. controlled components 
+3. react hook form
+
+
+
+### useRef wala ---->>>>
+1. ismai hum kya krenge ki pehle  saare inputs ke liye  ** "null" ** references bnaa lenge , fir unn references ko attach 
+   krdenge with jo bhi unka input hoga 
+
+2. then hum form ko submit hone se rokenge , uske liye hum ek function chalayenge , jo ki onSubmit pe chlega form mai 
+   usmai esa hota h ki --
+   jab hum onSubmit kr rhe h mtlb ki submit kr rhe h mtlb ki koi event chal rha hai 
+   toh uss event ko hum as a input lete hai ek humare function ke liye 
+   and then hum event.preventDefault() chala dete hai 
+3. fir hum data ko access kr skte hai with the help of -->>
+    console.log(name , age);  //Yeh current krke property return krte h 
+    console.log(name.current , age.current); //Yeh field return krte hai 
+    console.log(name.current.value , age.current.value); //Yeh uss field ki exact value kya hai voh return krte hai
+
+
+
+
+### controlledComponents wala ---->>
+1.  ismai hum kya krenge ki pehle  saare inputs ke liye  ** "" ** blank feild ke useStates bnaa lenge , fir unn states ki
+    destructuring krenge 
+
+2. then hum form ko submit hone se rokenge , uske liye hum ek function chalayenge , jo ki onChange pe chlega form mai 
+   usmai esa hota h ki --
+   jab hum onChange kr rhe h mtlb ki change kr rhe h mtlb ki koi changes chal rhe hai fields mai
+   toh uss event ko hum as a input lete hai ek humare function ke liye 
+   and then hum event.target.value chala dete hai 
+3. fir hum data ko access kr skte hai with the help of -->>
+    console.log(event); 
+    console.log(event.target); //Yeh field return krte hai 
+    console.log(event.target.value); //Yeh uss field ki exact value kya hai voh return krte hai
+    toh fir hum humara function kuch esa bnaayenge 
+    onchange = { (event) => setVal( { name : event.target.value } ) }
+  
+
+
+
+### useHookform wala --->>
+1.  ab ismai hum kya krenge ki react-hook-form ko install krenge first of all
+    fir hum useForm bnaayenge
+2. ismai ek property hoti hai register naam se , aur khudka handleSubmit present hota hai vhi use krna hota hai 
+3. toh hum hna register ko copy krlenge aur usmai field pass krenge (code dekh lena eexplain krna mushkil ho rha hai)    
