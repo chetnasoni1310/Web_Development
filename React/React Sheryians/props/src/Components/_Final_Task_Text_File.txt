@@ -1,0 +1,74 @@
+function App() {
+
+  const data = [
+    { name: "Saksham", profession: "Teacher", image: "...", friends: false },
+    { name: "Harsh", profession: "Artist", image: "...", friends: false },
+    { name: "Himanshu", profession: "Content Creator", image: "...", friends: false }
+  ];
+
+  const [realData, setRealData] = useState(data);
+
+  const handleFriendsToggle = (index) => {
+    setRealData(prevData =>
+      prevData.map((item, i) =>
+        i === index ? { ...item, friends: !item.friends } : item
+      )
+    );
+  };
+
+  return (
+    <div className="bg-zinc-100 w-full h-screen flex justify-center items-center gap-10">
+      {realData.map((item, index) => (
+        <Task2_method2
+          key={index}
+          values={item}
+          onClickFriendsHandling={() => handleFriendsToggle(index)}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function Task2_method2({ values, onClickFriendsHandling }) {
+
+  const { name, profession, image, friends } = values;
+
+  return (
+    <div className="w-80 bg-zinc-200 rounded overflow-hidden relative">
+      <img className='w-full h-[250px] object-cover' src={image} alt="" />
+
+      <button
+        onClick={onClickFriendsHandling}
+        className={`w-8 h-8 rounded-full absolute top-4 right-4 flex justify-center items-center 
+          ${friends ? "bg-red-500" : "bg-green-600"}`}
+      >
+        {friends ? <TbFriendsOff /> : <TbFriends />}
+      </button>
+
+      <div className='py-2 px-4'>
+        <h1 className='font-semibold text-xl'>{name}</h1>
+        <h3 className='text-xs'>{profession}</h3>
+      </div>
+    </div>
+  );
+}
