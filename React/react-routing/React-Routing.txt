@@ -1,0 +1,24 @@
+//First of all toh humein npm i react-router-dom krna hai 
+fir jo sbse bada container ya component hoga uske andar humein <BrowserRouter> ke andar <App> ko wrap krna hai 
+
+//Then fir jab hum aayenge humare navigation thing pe toh fir 
+    <a href=""> ki jagah hum 
+    <Link to=""> use krte hai taaki humara page jo hai voh refresh toh na ho atleast 
+    <NavLink to=""> yeh hum tab use krenge jab hum chahenge ki humare links ko styling de ske hum 
+
+    //Ab NavLink mai styling krne ke 3 methods hote hai 
+    ** by style ke andar arrow event function
+      <NavLink
+        style = {
+            (e)=>{
+                return {color : e.isActive ? 'red' : ' ' ,
+                        fontWeight : e.isActive ? 'bold' : ' ',
+                }
+            }
+        } 
+        to="/">Home</NavLink>
+
+
+    **by direct arrow event function    
+
+
