@@ -27,6 +27,20 @@ function Context(props) {
             price: '$500',
             brand:'Gucci'
         },
+        {
+            id:3,
+            title:'Bag',
+            name : 'Blonde Bag',
+            price: '$500',
+            brand:'Gucci'
+        },
+        {
+            id:4,
+            title:'Bag',
+            name : 'Blonde Bag',
+            price: '$500',
+            brand:'Gucci'
+        },
     ])
 
   return (

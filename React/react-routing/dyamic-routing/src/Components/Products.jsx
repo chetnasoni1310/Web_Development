@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 function Products() {
   const { product } = useContext(userContext);
   return (
+    <>
+    <h1>This is product page</h1>
     <div className=" pb-2 m-auto text-center text-xl">
       {product.map((item) => (
         <Link
@@ -17,6 +19,7 @@ function Products() {
       ))}
 
     </div>
+    </>
   );
 }
 
