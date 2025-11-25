@@ -17,10 +17,10 @@ function Form_usingUseRef() {
   return (
     <div>
       <form action="" method='post'  onSubmit={handleSubmission}   >
-        <input  ref={name} type="text" placeholder='name' name='name' className='border-1 p-1'/>
+        <input  ref={name} type="text" placeholder='name' name='name' className='border p-1'/>
         <br />
         <br />
-        <input ref={age}  type="number" placeholder='age' name='age' className='border-1 p-1' />
+        <input ref={age}  type="number" placeholder='age' name='age' className='border p-1' />
         <br />
         <br />
         <input type="submit" className='border-2 p-1 px-4 rounded-md bg-blue-100' />
