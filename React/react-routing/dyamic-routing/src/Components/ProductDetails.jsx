@@ -4,10 +4,13 @@ import { useNavigate, useParams } from "react-router-dom";
 
 function ProductDetails() {
   const { product } = useContext(userContext);
-  const { id } = useParams();
+  const { title } = useParams();
   const navigate = useNavigate();
 
-  const element = product[id];
+  const element = product.find( (item) => item.title=== title );
+//   👉 It means -->>>>>
+//  "In the product array, find the object where
+// item.title is equal to the title from the URL."
 
   return (
     <div className="flex flex-col justify-center items-center gap-2">

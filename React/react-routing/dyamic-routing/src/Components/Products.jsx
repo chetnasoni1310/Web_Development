@@ -9,7 +9,7 @@ function Products() {
       {product.map((item) => (
         <Link
           key={item.id}
-          to = {`/products/${item.id}`}
+          to = {`/products/${item.title}`}
           className="w-1/4 pb-2 mb-4 m-auto block bg-yellow-100 uppercase hover:font-semibold  hover:bg-yellow-200 "
         >
           {item.title}
