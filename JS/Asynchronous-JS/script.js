@@ -63,5 +63,113 @@ parchi
 
 
 // 6. CallBack
-//    Yeh ek function hai , jise kisi aur function mai as an argument pass krte hai 
-//    
+//    Yeh ek function hai , jise kisi aur 2nd function mai as an argument pass krte
+//    hai 
+//    Jab hum fir uss 2nd function ko chalayenge , toh fir callback function chalega 
+
+//QUESTION :- User se data mangwao , aur jab aajaye data toh usske name , gender and email ko print krwao 
+function getData(url  , callback){
+
+    fetch(url)
+      .then(raw => raw.json())
+      .then(res => callback(res))
+      .catch(err => console.log(err))
+
+}
+
+function kuchkuchWithData(response)
+{
+    console.log(response.results[0].name.first + " " + response.results[0].name.last);
+    console.log(response.results[0].gender);
+    console.log(response.results[0].email);
+}
+
+getData(`https://randomuser.me/api/` , kuchkuchWithData);
+
+
+
+
+//Async-Await
+// Function bnaalo aur uske andar jo mann m aaye voh async code likhdo , 
+// Ab jab appn async code likhte hai , toh uske baad wala jo code hai voh pehle chal jata hai , kyunki asyc toh side stack m chala jaata hai 
+
+(async function abcd(){
+    let api = await fetch(`https://randomuser.me/api/`) 
+    api = await api.json();
+    console.log(api.results[0].name.first);
+    console.log(api.results[0].email);
+})();
+
+
+
+//Event loop 
+// So basically main stack and side stack are 2 things 
+// When things are async or time-taking they wil move to side stack 
+// and the sync code moved to main stack 
+// after the main stack becomes empty , then only the side stack things started getting executed in the main stack , till then they wait in side stack 
+// this all handling of events is done by  ********* event loop *********  in JS 
+
+
+
+
+// Difference between Callback , Promise , Async/Await 
+// inn sabse ek ek krke url se data mangwao laao aur data show krwao 
+
+//Callback
+function getDatabyCallback(url , callback)
+{
+    fetch(url)
+    .then(raw => raw.json())
+    .then(res => callback(res))
+    .catch(err => console.log(err))
+}
+
+getDatabyCallback(`https://randomuser.me/api/` , (response)=>{
+//    console.log(response.results[0]);
+   console.log(response.results[0].location.country);
+    console.log('By callback')
+
+})
+
+
+
+//Promise
+let promisePrachi = new Promise(function(resolve , reject){
+
+    fetch(`https://randomuser.me/api/`)
+        .then(raw => raw.json())
+        .then(res => {
+           if(res.results[0].gender === 'male')
+            resolve(res);
+           else
+            reject();
+        })
+        .catch(err => reject(err))
+})
+promisePrachi
+    .then(response => {
+        console.log(response.results[0].picture.large)
+        console.log('picture')
+    console.log('By promise')
+
+    })
+    .catch((err) => {
+        console.log('Not resolved' , err);
+    })
+
+
+
+// Async - Await
+async function getDataAsync(url)
+{
+    let raw = await fetch(url);
+    let result  = await raw.json();
+    console.log(result.results[0].name.first)
+    console.log('By async await')
+}
+
+async function torunAsync(){
+    await getDataAsync(`https://randomuser.me/api/`);
+}
+
+torunAsync();
