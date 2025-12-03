@@ -58,8 +58,14 @@ export const productSlice = createSlice ({
     name : 'products',
     initialState,
     reducers : {
-
+      deleteProduct : (state , action) => {
+        // console.log(state , action)
+        console.log(action);
+        state.products.splice(action.payload , 1)
+      }
     },
 })
 
 export default productSlice.reducer;
+
+export  const {deleteProduct} =  productSlice.actions ;
