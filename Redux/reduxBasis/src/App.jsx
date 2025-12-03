@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   increment,
   decrement,
-  incrementByAmount,
+  incrementAsync,
 } from "./reducers/counterSlice";
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
         Decrement
       </button>
       <button
-        onClick={() => dispatch(incrementByAmount(5))}
+        onClick={() => dispatch(incrementAsync(5))}
         className="px-4 py-2 bg-green-200 rounded-full mx-3 my-6 cursor-pointer border border-gray-500 font-medium"
       >
         Increment by 5
